@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 import os
-
 from pathlib import Path
 from django.templatetags.static import static
 from django.urls import reverse_lazy
@@ -31,10 +30,6 @@ BACKEND_URL = config("BACKEND_URL")
 DEBUG = config("DEBUG")
 
 ALLOWED_HOSTS = ["localhost", "*"]
-
-AWS_ACCESS_KEY_ID = config("AWS_ACCESS_KEY_ID")
-AWS_SECRET_ACCESS_KEY = config("AWS_SECRET_ACCESS_KEY")
-AWS_STORAGE_BUCKET_NAME = config("AWS_STORAGE_BUCKET_NAME")
 
 # Application definition
 
@@ -229,5 +224,5 @@ CORS_ALLOW_ALL_ORIGINS = True  # Only use this for development!
 #     "http://127.0.0.1:3000",
 # ]
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
