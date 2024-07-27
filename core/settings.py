@@ -187,7 +187,11 @@ REST_FRAMEWORK = {
 LOGIN_REDIRECT_URL = "/"
 
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = (f"{FRONTEND_URL}", f"{BACKEND_URL}")
+CORS_ORIGIN_WHITELIST = (
+    f"{FRONTEND_URL}",
+    f"{BACKEND_URL}",
+    "https://hackindore-backend.up.railway.app/",
+)
 CORS_ALLOW_ORIGINS = [
     FRONTEND_URL,
 ]
