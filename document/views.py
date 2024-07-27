@@ -4,10 +4,7 @@ from rest_framework import mixins, status
 from rest_framework.decorators import action
 from drf_spectacular.utils import extend_schema
 from rest_framework.response import Response
-from django.core.files.uploadedfile import UploadedFile
-from rest_framework.decorators import api_view
 
-from authentication.models import User
 from .permissions import CanAccessDocument
 from .serializers import DocumentSerializer
 from .models import Document

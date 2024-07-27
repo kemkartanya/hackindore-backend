@@ -9,7 +9,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
-
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("auth/", include("dj_rest_auth.urls")),
@@ -18,6 +17,7 @@ urlpatterns = [
     # Custom Django Apps
     path("authentication/", include("authentication.urls")),
     path("document/", include("document.urls")),
+    path("ticket/", include("ticket.urls")),
     path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
     path(
         "api/schema/swagger-ui/",
