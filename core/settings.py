@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     # Django Apps
     "authentication",
     "document",
+    "employee",
 ]
 
 MIDDLEWARE = [
